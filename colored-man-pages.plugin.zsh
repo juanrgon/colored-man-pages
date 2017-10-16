@@ -16,7 +16,7 @@ EOF
 	fi
 fi
 
-unalias man # unalias man to avoid function error
+unalias man 2>/dev/null # unalias man to avoid function error
 
 man() {
 	env \
