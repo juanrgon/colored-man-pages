@@ -16,6 +16,8 @@ EOF
 	fi
 fi
 
+unalias man # unalias man to avoid function error
+
 man() {
 	env \
 		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
